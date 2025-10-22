@@ -16,6 +16,15 @@ export type TaskAction =
     | { type: 'TOGGLE_TODO', payload: number }
     | { type: 'DELETE_TODO', payload: number };
 
+export const getTasksInitialState = (): TaskState => {
+    return {
+        todos: [],
+        completed: 0,
+        pending: 0,
+        length: 0
+    }
+}
+
 export const taskReducer = (state: TaskState, action: TaskAction): TaskState => {
 
     switch (action.type) {
@@ -40,7 +49,7 @@ export const taskReducer = (state: TaskState, action: TaskAction): TaskState => 
             return {
                 ...state,
                 todos: currentTodos,
-                length: currentTodos.length - 1,
+                length: currentTodos.length,
                 completed: currentTodos.filter(todo => todo.completed).length,
                 pending: currentTodos.filter(todo => !todo.completed).length
             };
