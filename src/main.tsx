@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { MemoCounter } from './06-memos/MemoCounter'
+import { InstagromApp } from './07-useOptimistic/InstagromApp'
+// import { MemoCounter } from './06-memos/MemoCounter'
 // import { MemoHook } from './06-memos/MemoHook'
 // import { TrafficLight } from './01-useState/TrafficLight';
 // import { TrafficLightWithEffect } from './02-useEffect/TrafficLightWithEffect';
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
     {/* <TasksApp /> */}
     {/* <ScrambleWords /> */}
     {/* <MemoHook /> */}
-    <MemoCounter />
+    {/* <MemoCounter /> */}
+    <InstagromApp />
   </StrictMode>
 )
