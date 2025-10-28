@@ -12,8 +12,8 @@ import './index.css'
 // import { FocusScreen } from './04-useRef/focusScreen';
 // import { TasksApp } from './05-useReducer/TaskApp';
 // import { ScrambleWords } from './05-useReducer/ScrambleWords';
-import { ClientInformation } from './08-use-suspende/ClientInformation';
-import { getUserAction } from './08-use-suspende/api/get-user.action';
+import { ClientInformation } from './08-use-suspense/ClientInformation';
+import { getUserAction } from './08-use-suspense/api/get-user.action';
 
 
 createRoot(document.getElementById('root')!).render(
