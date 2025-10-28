@@ -9,8 +9,7 @@ interface UserContextProps {
     user: User | null;
 
     //Methods
-    login: (userId: number) => boolean;
-    
+    login: (userId: number) => boolean;   
     logout: () => void;
 }
 
