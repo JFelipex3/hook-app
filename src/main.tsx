@@ -12,8 +12,9 @@ import './index.css'
 // import { FocusScreen } from './04-useRef/focusScreen';
 // import { TasksApp } from './05-useReducer/TaskApp';
 // import { ScrambleWords } from './05-useReducer/ScrambleWords';
-import { ClientInformation } from './08-use-suspense/ClientInformation';
-import { getUserAction } from './08-use-suspense/api/get-user.action';
+// import { ClientInformation } from './08-use-suspense/ClientInformation';
+// import { getUserAction } from './08-use-suspense/api/get-user.action';
+import { ProfessionalApp } from './09-useContext/ProfessionalApp';
 
 
 createRoot(document.getElementById('root')!).render(
@@ -29,12 +30,15 @@ createRoot(document.getElementById('root')!).render(
     {/* <MemoHook /> */}
     {/* <MemoCounter /> */}
     {/* <InstagromApp /> */}
-    <Suspense fallback={
+
+    {/* <Suspense fallback={
       <div className='bg-gradient flex flex-col'>
         <h1 className='text-2xl'>Cargando...</h1>
       </div>
     }>
       <ClientInformation getUser={getUserAction(1000)} />
-    </Suspense>
+    </Suspense> */}
+    
+    <ProfessionalApp />
   </StrictMode>
 )
